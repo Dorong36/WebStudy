@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .txt{
+            background-color: darkgreen;
+            color: whitesmoke;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer; /* 마우스 커서 모양 관련 스타일 */
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="createBtn">내용추가</button>
+    <button id="designBtn">디자인 적용</button>
+    <button id="removeBtn">내용삭제</button>
+
+    <div id="contents"></div>
+
+
+    <!-- jQuery -->
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+
+            //'내용추가'버튼 클릭 시, 새로운 내용을 웹 페이지에 출력
+            $('#createBtn').on('click', ()=>{
+                //append : 추가할 내용 및 요소
+                $('#contents').append('<p>내용추가</p>');
+            });
+
+            //'디자인적용'버튼 클릭 시, p요소의 class속성 추가
+            $('#designBtn').on('click', ()=>{
+                //스타일을 적용할 때 class를 추가하는 방법을 많이 활용!!
+                $('p').addClass('txt');
+                //클래스 속성을 삭제할 때는 removeClass(클래스 속성값) 사용
+
+                //요소의 클래스 속성값을 불러옴
+                // console.log($('p').addClass());
+                
+                //p요소를 클릭했을 때 적용된 디자인을 삭제(Class속성값 삭제)
+                // $('p.txt').on('click', (event)=>{
+                //     console.log(event.currentTarget);
+
+                //     //$('p.txt') 문법을 활용하면 선택자에 해당하는 모든 요소가 삭제
+                //     // 클릭된 요소만 적용되게 하기 위해서 event객체 활용
+                //     $(event.currentTarget).removeClass('txt');
+                // });
+
+
+                // this키워드 : 이벤트가 발생된 요소정보를 담고 있는 키워드
+                $('p.txt').on('click', function(){
+                    $(this).removeClass('txt');
+
+                    //remove() : 선택한 요소 삭제
+                    $(this).remove();
+                });
+
+            });
+
+
+            //'내용삭제' 버튼 클릭 시, div요소 내 생성된 모든 p요소 삭제
+            $('#removeBtn').on('click', ()=>{
+                // empty() : 부모요소 내 있는 모든 자식요소 삭제
+                $('#contents').empty();
+            })
+            
+            
+            
+
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            width:100px;
+            height: 300px;
+            background-color:lightgray;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+        }
+        /* absolute : 부모요소를 벗어나서 body요소를 기준으로 배치하는 속성
+            부모요소의 position값이 relative or absolute라면 부모요소 기준으로 배치
+        */
+        .bg1{
+            background-color: #ff4949;
+            position: absolute;
+            /* left: 108px; */
+            /* body에 왼쪽에 기본으로 8px공백이 있는데, absolute로 꺼내주면 단순히 나두는거를 제외하고는 옮길때 기본값 없다 생각하고 이동해줘야함!! */
+        }
+        .bg2{
+            background-color: #f9ca24;
+        }
+        .bg3{
+            background-color: #0984e3;
+        }
+    </style>
+</head>
+<body>
+    <div id = "parent">
+        <div class="child bg1">Child</div>
+        <div class="child bg2">Child</div>
+        <div class="child bg3">Child</div>
+    </div>
+</body>
+</html>

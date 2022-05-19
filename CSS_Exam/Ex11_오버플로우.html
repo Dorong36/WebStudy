@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            width:100px;
+            height: 300px;
+            background-color:lightgray;
+            margin: 0 auto;
+            overflow: auto;
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+        }
+        .bg1{
+            background-color: #ff4949;
+            position: relative;
+            left: 50px;
+        }
+        .bg2{
+            background-color: #f9ca24;
+        }
+        .bg3{
+            background-color: #0984e3;
+            position: relative;
+            right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id = "parent">
+        <div class="child bg1">Child</div>
+        <div class="child bg2">Child</div>
+        <div class="child bg3">Child</div>
+    </div>
+</body>
+</html>

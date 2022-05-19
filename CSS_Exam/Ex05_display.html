@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1, span, p, a{border: 2px solid black;}
+        /* inline속성 : 크기조절(너비, 높이) 불가능, 일부 여백만 적용가능 */
+        h1,p{display: inline;}
+
+        /* block속성 : 크기 조절이 가능하고 모든 여백 적용 가능 */
+        span{display: block; width: 100px; height: 100px}
+
+        /* inline-block속성 : 콘텐츠만큼 범위를 차지하되 크기와 여백이 조절가능한 속성값 */
+        a{display:inline-block; width : 120px; height: 60px}
+
+        /* none속성 : 안보이게 함 */
+        #noneTarget{display: none;}
+    </style>
+</head>
+<body>
+    <h1>display속성 다루기</h1>
+    <p>요소가 화면에 보이는 방식 지정</p>
+    <p id = noneTarget>none으로 없애버리장</p>
+    <span>block</span>
+    <span>inline</span>
+    <span>inline-block</span>
+
+
+    <a href="#">display 다루기</a>
+
+
+</body>
+</html>

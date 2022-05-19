@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href=""><h1>인공지능반</h1></a>
+    <input type="button" value="디자인 바꿔보자!" onclick="change()">
+    <input type="button" value="다시초기화!">
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <h1>오늘은 2월 24일!!</h1>
+    <p>자바스크립트 첫 스타트<!DOCTYPE html></p>
+
+    <!-- 자바스크립트!! -->
+    <script>
+        function change(){
+            // change 함수 실행시 웹 페이지 배경색을 검정색, 그자색은 하얀색으로 변경
+            // 대상 : body요소
+            // 지정할 스타일은 : 배경색, 글자색
+            // document.querySelector("body")  ===>  body요소객체 접근
+            document.querySelector("body").style.backgroundColor = "black";
+            document.querySelector("body").style.color = "white";
+        }
+
+        // 현재 웹문서 객체에서 타입이 버튼인 것들을 모두 선택해서 btns변수에 대입
+        let btns = document.querySelectorAll("input[type='button']");
+
+        // 그 중 두 번째 요소에(배열처럼) 이벤트(클릭, 스크롤, 드래그, 등등)에 따른 행동 등록
+        btns[1].addEventListener('click', init);
+
+        function init(){
+            document.querySelector("body").style.backgroundColor = "white";
+            document.querySelector("body").style.color = "black";
+        }
+    </script>
+</body>
+</html>

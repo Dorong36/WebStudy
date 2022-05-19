@@ -1,0 +1,27 @@
+#chkImg{
+    /* 
+    - 모든 요소는 컨텐츠(내용)이 없으면 높이값이 주어지지 않아 스타일을 적용해도 웹 페이지 상에 보여지지 않는다!!
+    - 콘텐츠 없이 요소를 보여지게 해야 할 경우 높이값을 설정할 것!!
+    */
+    background-image: url(/HTML/img/login_state.png);
+    background-repeat:no-repeat;
+    width: 26px;
+    height: 26px;
+}
+/* 아이디가 chkImg인 div요소를 클릭했을 때 체크상태로 이미지 변경 */
+#chkImg:active{
+    background-position: -26px 0;
+}
+
+/*
+ - cover속성 : 여백없이 요소에 완전히 채우는 속성 (이미지가 깨질 우려 있음)
+ - contain속성 : 요소에 완전히 맞도록 크기 조정하는 속성
+*/
+#bg2{
+    background-image: url(/HTML/img/bg2.png);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: contain;
+    height: 100px;
+    width: 200px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1, #box2{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+        }
+        #box1{
+            margin: 10px;
+            padding: 10px;
+            /* box-sizing : 요소의 크기를 표시하는 방식 지정
+            border-box : 가로, 세로, 마진 영역을 제외한 패딩, 내용, 테두리를 포함한 크기로 설정 */
+            box-sizing: border-box;
+            text-align: center;
+            /* lint-height : 텍스트를 수직 기준 가운데 정렬할 때 사용. 단 한문장일 때만 가능 */
+            line-height: 76px;
+        }
+        #box2{
+            /* margin: 10px; */
+
+            /* auto : block속성 요소 웹페이지 가운데 정렬 
+                +) inline속성을 가운데 정렬? text-align: center;
+            */
+            margin: 0 auto;
+            text-align: center;
+            line-height: 96px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
+</body>
+</html>

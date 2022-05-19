@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            /* 높이는 %가 반영 안됨!!!
+                너비는 %적용 가능, 내부 요소들도 %로 지정하면 창크기에 따라서 너비가 조절이 됨.
+            */
+            width: 60%; 
+            height: 768px;
+            margin: 0 auto;
+        }
+        #header{
+            /* 자식 요소들에서는 높이에 %가 적용이 되는데, 이거는 단순히 부모요소의 높이에 대한 비율을 의미. */
+            width: 100%;
+            height: 20%; 
+            background-color: 
+            rgb(255, 89, 89);
+        }
+        #contents{
+            width: 70%; 
+            height: 30%; 
+            background-color: 
+            rgb(85, 85, 255); 
+            float: left;
+        }
+        #side_right{
+            width: 30%; 
+            height: 30%; 
+            background-color: 
+            rgb(255, 230, 0); 
+            float: left;
+        }
+        #footer{
+            width: 100%;
+            height: 20%; 
+            background-color:
+            rgb(0, 216, 0); 
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">HEADER</div>
+        <div id="contents">CONTENTS</div>
+        <div id="side_right">SIDE_RIGHT</div>
+        <div id="footer">FOOTER</div>
+    </div>
+</body>
+</html>

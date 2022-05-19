@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 자손선택자 */
+        /* id, class이용해서 적용시에는 dl #id / dl .class 이런식으로 가능!! */
+        dl span{color:dodgerblue;}
+        dl li{color:blue;}
+
+        /* 자식선택자 */
+        ol>span{color: rgb(255, 217, 0);}
+
+        /* 근접후행 형제 */
+        li + li{color: red;}
+
+        /* 후행선택자 */
+        li ~ li{color:black;}
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>연수생 수칙</dt>
+        <dd>
+            <ol>
+                <li>지각하지 않기</li>
+                <li>결석하지 않기</li>
+                <span>(불가피할 땐 꼭 담당 연구원에게 미리 말하기)</span>
+                <li>복습하기</li>
+            </ol>
+        </dd>
+    </dl>
+</body>
+</html>

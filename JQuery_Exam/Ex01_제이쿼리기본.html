@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>jQuery 다루기</h1>
+
+    <form action="">
+        <input type="text">
+        <input type="button" value="클릭">
+    </form>
+
+    <p id="msg">jQuery는 자바스크립트를 간편하게 사용할 수 있게 제공되는 오픈소스 라이브러리</p>
+
+    <!-- jQuery 기능을 사용하기 위해서 파일 로드 -->
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        // HTML 문서가 모두 로드되었을 때 실행하는 함수
+        // $(document).ready(function(){       더 간략화하는 방법(다음 줄)
+        $(function(){
+
+            //jquery 기본문법
+            //h1요소 객체에 접근
+            //JavaScript : document.quertySelector(CSS선택자)  ==> HTML객체
+            //jQuery : $('CSS선택자')  ==> jQuery객체 (innerHTML등 사용 불가, but 그에 맞는 기능들을 따로 제공)
+
+            //.html() : jQuery 객체의 내용을 읽어오는 메소드 ( = 자바스크립트의 innerHTML 속성)
+            let $data = $('body > h1').html();
+            //변수 사용할때는 제이쿼리 객체임을 구분하기 위해 $를 붙임!!
+            console.log($data);
+            //.html('문자열') : jQuery 객체의 내용을 변경하는 메소드
+            $('body>h1').html('제이쿼리<br>변경해보기!!');
+            $('body>h1').html('<a href="#">제이쿼리<br>변경해보기!!</a>');
+
+            //버튼을 클릭했을 때
+            //JAVAScript : addEventListener(이벤트종류, 이벤트핸들러(콜백함수));
+            //JQuery : on(이벤트종류, 이벤트핸들러(콜백함수));  ex) click, ...
+            $('input[type="button"]').on('click', ()=>{
+
+                //val() : 입력요소의 값을 읽어오는 매소드
+                let $val = $('input[type = "text"]').val();
+                console.log($val);
+            })
+            
+            //p요소 jQuery객체에 접근 후 디자인 적용
+            //css(스타일 속성, 값) : css디자인 적용할 때 사용하는 메소드
+            // $('#msg').css('color', 'blue');
+            // $('#msg').css('font-size', '30px');
+            // $('#msg').css('border', '2px dashed black');
+
+            //변형1
+            // $('#msg').css('color', 'blue')
+            //          .css('font-size', '30px')
+            //          .css('border', '2px dashed black');
+
+            //변형2
+            //해당 요소에 다양한 스타일을 넣을 때 사용하는 방식
+            // - 스타일 속성과 값을 객체구조({속성:값, ...})로 적용
+            $('#msg').css({
+                'color':'blue',
+                'font-size':'30px',
+                'border':'2px dashed black'
+            });
+
+        })
+    </script>
+
+</body>
+</html>

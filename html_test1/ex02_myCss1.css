@@ -1,0 +1,31 @@
+#red{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    border-radius: 0 50px;
+}
+#green{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+    left: 100px;
+    border-radius: 0 50px;
+}
+#blue{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    left: 200px;
+    border-radius: 0 50px;
+}
+#grey{
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    position: relative;
+    left: 300px;
+    border-radius: 0 50px;
+}

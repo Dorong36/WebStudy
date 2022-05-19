@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 구글 폰트 적용에 필요한 파일 로드 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap" rel="stylesheet">
+
+    <!-- 구글 아이콘 구동에 필요한 파일 로드 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        /* 그룹 선택자 */
+        /* h1{color: cadetblue; font-family: 'Noto Serif KR', serif;}
+        p{color: aquamarine; font-family: '휴먼편지체';} */
+        h1, p, li{color:cadetblue; font-family: '휴먼편지체';}  
+
+        /* 반응선택자 : 사용자의 반응으로 생성되는 특정한 상태를 선택
+        - :active => 사용자가 마우스로 클릭할 때
+        - :hover  => 마우스를 요소에 올렸을 때
+        */
+
+        /* h1요소에 마우스를 올렸을 때 글자색을 변경하시오 */
+        h1:hover{
+            color: red;
+        }
+        /* h1요소를 클릭했을 때 글자크기를 변경하시오. (클릭 떼면 다시 작아짐)*/
+        h1:active{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>그룹선택자</h1>
+
+    <p>동일한 스타일을 적용할 때 사용하는 선택자</p>
+
+    <ul>
+        <li>그룹선택자</li>
+        <li>요소선택자 사이에 콤마(,)추가</li>
+        <li>다른 여러개의 요소를 선택하여 동일한 스타일 적용</li>
+    </ul>
+
+
+    <span class="material-icons">
+        search
+    </span>
+    <span class="material-icons">
+        account_circle
+    </span>
+
+
+
+</body>
+</html>

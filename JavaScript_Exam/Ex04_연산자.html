@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <!-- js -->
+    <script>
+
+        //연산자 : 증감, 대입, 산술, 논리, 비교, 삼항... 일반적으로 자바 연산자 그대로 사용, 하지만 조금 차이가 있기도함!!
+        //산술연산자 : + - * /(몫이 아니라 나누기!! 소숫점으로 결과가 나옴) %
+
+        //데이터 형변환 : parseInt(), parseFloat(), Number(), String()
+        console.log(9/2); // 4.5라는 실수값이 출력
+        console.log(parseInt(9/2)); // 4.5라는 결과값 4로 변환
+
+
+        // 비교연산자 : ==(동등연산자), != >, <, >=, <=, ===(일치연산자), !==
+        // 숫자데이터와 문자열데이터를 비교할 때 비교연산자를 사용하면 자동형변환이 발생!!
+        // 사전에 비교할 데이터들의 값과 자료형을 맞춘 상태에서 비교연산자를 사용!
+        // 두 데이터가 같은지를 비교할 때에는 반드시 일치연산자를 사용해라!!!!
+        console.log(5==5);
+        console.log(5=='5'); // 문자열 5를 숫자형으로 자동 형변환이 일어났기 때문에 true로 나옴
+        console.log(5==='5'); // 일치연산자로 비교시 데이터와 자료형의 동일여부를 판단!!(자료형변환 X) 정상적으로 false로 나옴.
+
+    </script>
+</body>
+</html>

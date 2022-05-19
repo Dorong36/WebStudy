@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>숫자 추측 게임</title>
+    <style>
+      .success {
+        background-color: limegreen;
+        color: white;
+      }
+      .fail {
+        background-color: tomato;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>숫자 추측 게임</h1>
+
+    <p>
+      1부터 100까지의 숫자 중에서 하나의 숫자를 뽑았습니다.<br />
+      당신이 추측할 수 있는 기회는 10번 입니다.<br />
+      추측한 숫자가 높다거나 낮다는 아래에서 표시됩니다.<br />
+    </p>
+
+    <form action="">
+      <input type="text" id="answer" />
+      <input type="button" value="추측" onclick="check()"/>
+    </form>
+
+    <p id="before_result">이전 결과: </p>
+    <p id="result"></p>
+
+    <!-- js -->
+    <script src="./JS/guess.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>회원가입 입력</h1>
+<body>
+    <form action="">
+        <table border="1", cellspacing = "0" width = "700">
+            <tr>
+                <td align="center" bgcolor = "skyblue">사용자 ID</td>
+                <td><input type="text" name="user-id" id=""></td>
+                <td colspan="2"><input type="button" value="ID중복확인"></td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor = "skyblue">비밀번호</td>
+                <td><input type="password" name="user-pw" id=""></td>
+                <td align="center" bgcolor = "skyblue">비밀번호 확인</td>
+                <td><input type="password" name="re_user-pw" id=""></td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor = "skyblue">사용자 이름</td>
+                <td colspan="3"><input type="text" name="username" id=""></td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor = "skyblue">주민등록번호</td>
+                <td colspan = "3"><input type="text" name="rsdt-number1" id=""> - <input type="text" name="rsdt-number2" id=""></td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor = "skyblue">생년월일</td>
+                <td><input type="date" name="bDate" id=""></td>
+                <td align="center" bgcolor = "skyblue">성별</td>
+                <td><input type="radio" name="gender" id="">남자<input type="radio" name="gender" id="">여자</td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor = "skyblue">우편번호</td>
+                <td colspan="3"><input type="text" name="postNum1" id=""> -
+                    <input type="text" name="postNum1" id="">
+                    <input type="button" value="우편번호 확인">
+                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor = "skyblue">주소</td>
+                <td colspan="3"><input type="adrs" name="" id=""></td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor = "skyblue">나머지</td>
+                <td colspan="3"><input type="text" name="adrs2" id=""></td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor = "skyblue">E-mail</td>
+                <td colspan="3"><input type="text" name="Email" id=""> @ 
+                    <select name="Emails" id="">
+                        <option>선택하세요</option>
+                        <option>naver.com</option>
+                        <option>gamil.com</option>
+                        <option>hanmail.net</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor = "skyblue">직업</td>
+                <td colspan="3">
+                    <select name="job" id="">
+                        <option>선택하세요</option>
+                        <option>직장인</option>
+                        <option>기관공무원</option>
+                        <option>교육공무원</option>
+                        <option>학생</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" align="center"><input type="submit" value="등록"><input type="reset" value="취소"></td>
+            </tr>
+        </table>
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 전체선택자 */
+        *{color: aqua;}
+
+        /* 태그(타입)선택자 : 요소의 이름으로 선택 */
+        h1{font-size: 16px; color: blueviolet;}
+        /* 같은 요소에 스타일속성 동일하게 정의한 경우 마지막 스타일이 반영된다. */
+        p{color: green;}
+        p{color:aquamarine;}
+
+        /* 아이디 선택자
+            - 사용법 : #아이디속성값
+            - 특정한 하나의 요소를 선택할 때
+            - 웹페이지 구조(3단구조)를 나눌 때
+        */
+        #middle_txt{color: coral;}
+
+        /* 클래스 선택자
+            - 사용법 : .클래스속성값
+            - 특정한 여러 개의 요소를 선택할 때
+            - 공통된 스타일을 적용할 때
+        */
+        .item{font-size: 30px;}
+
+        .lists1{color: blue; list-style-type: circle;}
+        .lists2{color: red;}
+        .title{color: black;}
+        span{color: black;}
+    </style>
+</head>
+<body>
+    <h1>CSS 다루기</h1>
+    <!-- 
+        3개의 p태그 중에 특정한 p태그를 선택해서 스타일 적용하고 싶다면?
+        아이디 or 클래스 선택자 활용!!
+     -->
+    <p>CSS는 스타일 시트 언어</p>
+    <p id="middle_txt">다양한 스타일로 웹 페이지 꾸미기</p>
+    <p>선택자를 활용할 줄 아는 것이 포인트!!</p>
+
+    <h1>Web의 3요소</h1>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <ul>
+        <li class="item">HTML</li>
+        <li class="item">CSS</li>
+        <li class="item">JavaScript</li>
+    </ul>
+
+    <hr>
+
+    <h1>실습문제</h1>
+    <span class = "title">▼ 올바른 개발자 생활</span>
+    <ul>
+        <li class = "lists1">쉬는 시간마다 5분 정도 먼 곳을 바라본다.</li>
+        <li class = "lists1">1시간마다 스트레칭을 한다.</li>
+        <li class = "lists1">거북목이 되지 않도록 목을 편다.</li>
+    </ul>
+
+    <span class = "title">연수생 수칙</span>
+    <ol>
+        <li class = "lists2">지각하지 않기</li>
+        <li class = "lists2">결석하지 않기 <br><span>(불가피할 땐 꼭 담당연구원에게 미리 말하기)</span></li>
+        <li class = "lists2">복습하기</li>
+    </ol>
+</body>
+</html>

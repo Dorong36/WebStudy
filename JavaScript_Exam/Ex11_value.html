@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+        <input type="text" id="data" onkeyup="show()">
+        <!-- onkeyup -> 입력 감지, 누를때마다 자동 반영 -->
+
+        <!-- checkbox, radio 타입은 value속성 정의하지 않으면 체크박스 on off만 전달됨 -->
+        아아<input type="checkbox" name = "coffee" value="아아">
+        뜨아<input type="checkbox" name = "coffee" value="뜨아">
+        라떼<input type="checkbox" name = "coffee" value="라떼">
+        
+        <input type="button" value="확인" onclick="show()">
+    </form>
+    <p id="dataView"></p>
+
+    <script src="./JS/Ex11_value.js"></script>
+
+</body>
+</html>

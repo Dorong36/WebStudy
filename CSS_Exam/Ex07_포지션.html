@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            width:100px;
+            height: 300px;
+            background-color:lightgray;
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+        }
+        /* relative : 현재 위치를 기준으로 방향 속성을 이용하여 요소를 배치하는 속성 */
+        .bg1{
+            background-color: #ff4949;
+            position: relative;
+            top: 20px;
+            left: -20px;
+        }
+        .bg2{
+            background-color: #f9ca24;
+            position: relative;
+            bottom: 20px;
+            right: 20px;
+        
+        }
+        /* 위치값 우선순위
+            top > bottom
+            left > right
+        */
+        .bg3{
+            background-color: #0984e3;
+            position: relative;
+            bottom: 20px;
+            right: 60px;
+            left: -20px;
+        
+        }
+    </style>
+</head>
+<body>
+    <div id = "parent">
+        <div class="child bg1">Child</div>
+        <div class="child bg2">Child</div>
+        <div class="child bg3">Child</div>
+    </div>
+</body>
+</html>

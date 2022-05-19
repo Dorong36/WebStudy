@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- table태그 : 웹 페이지에 표를 그려주는 태그
+        caption태그 : 테이블의 제목을 나타내는 태그
+        tr태그 : 행을 그려주는 태그(눈에 보이지는 않음)
+        th태그 : 열의 제목을 나타내는 태그
+        td태그 : 열을 그려주는 태그(화면에 데이터를 보여줌)
+
+        *브라우저에 의해 생성되는 태그 : thead, tbody
+    -->
+
+    <table border = "1" width = "400">
+        <caption>테이블태그 실습</caption>
+        <tr>
+            <th bgcolor = "#1B9CFC">열제목1</th>
+            <th>열제목2</th>
+        </tr>
+        <tr>
+            <td>1행 1열</td>
+            <td>1행 2열</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <table border = "1" cellspacing = "0" width = "400">
+        <caption>강좌정보</caption>
+        <tr>
+            <th bgcolor = "#55E6C1">과목명</th>
+            <th bgcolor = "#55E6C1">난이도</th>
+            <th bgcolor = "#55E6C1">중요도</th>
+        </tr>
+        <tr align = "center">
+            <td>HTML</td>
+            <td>🟢</td>
+            <td>🟢🟢🟢🟢🟢</td>
+        </tr>
+        <tr align = "center">
+            <td>CSS</td>
+            <td>🟢🟢🟢</td>
+            <td>🟢🟢🟢🟢🟢</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <!-- 셀 병합 실습(colspan(열병합), rowspan(행병합)) -->
+    <table border = "1" cellspacing = "0" width = "400">
+        <caption>강좌정보</caption>
+        <tr>
+            <th bgcolor = "#ff5e57">과목명</th>
+            <th bgcolor = "#ff5e57" colspan = "2">난이도 / 중요도</th>
+            <!-- <th bgcolor = "#55E6C1">중요도</th> -->
+        </tr>
+        <tr align = "center">
+            <td>HTML</td>
+            <td>🔴</td>
+            <td rowspan = "2">🔴🔴🔴🔴🔴</td>
+        </tr>
+        <tr align = "center">
+            <td>CSS</td>
+            <td>🔴🔴🔴</td>
+            <!-- <td>🔴🔴🔴🔴🔴</td> -->
+        </tr>
+    </table>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #flex_container{
+            /* display 속성 flex ==> 부모요소 안에 있는 자식요소의 정렬 방향이 row(행)방향으로 지정 */
+            display: flex;
+            /* flex-direction: column; */
+            width: 400px;
+            border: 2px dotted gray;
+            /* justify-content: space-around; */
+            
+            /* 자식요소의 크기가 부모요소보다 더 클 경우 줄 바꿈해주는 속성 */
+            flex-wrap: wrap;
+        }
+
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="flex_container">
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+    </div>
+
+
+</body>
+</html>
